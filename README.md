@@ -33,6 +33,11 @@ Estructura física del repositorio tras la fase de andamiaje inicial:
 │   ├── CONTRIBUTING.md               # Guía técnica de contribución y validación local
 │   └── README.md                     # Descripción general y mapa de componentes
 │
+├── Documentación Técnica (docs/)
+│   ├── 01-principios.md              # Principios fundamentales y mapa conceptual
+│   ├── 02-diseno-modular.md          # Modularidad, contratos y eliminación de monolitos
+│   └── 03-arquitectura.md            # Arquitectura hexagonal y dirección de dependencias
+│
 ├── Configuración del Entorno
 │   ├── .editorconfig                 # Reglas de formato, indentación y codificación
 │   ├── .gitattributes                # Normalización forzada de finales de línea a LF
@@ -51,6 +56,10 @@ Estructura física del repositorio tras la fase de andamiaje inicial:
 
 Los módulos de documentación técnica y principios conceptuales se incorporan de forma incremental en
 fases posteriores, preservando la trazabilidad de cada estándar.
+
+- [01 - Principios Fundamentales de Código](docs/01-principios.md): Legibilidad, cambio mínimo y correctitud.
+- [02 - Diseño Modular y Eliminación de Monolitos](docs/02-diseno-modular.md): Cohesión, contratos y cero monolitos.
+- [03 - Arquitectura y Dirección de Dependencias](docs/03-arquitectura.md): Regla de dependencia y dominio sin I/O.
 
 ---
 
