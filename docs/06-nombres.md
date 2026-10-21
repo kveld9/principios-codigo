@@ -196,4 +196,5 @@ def calculate_value_added_tax(amount: Decimal) -> Decimal:
 ## Navegación
 
 - Anterior: [05 - Funciones Pequeñas y Complejidad Ciclomática](05-funciones.md)
+- Siguiente: [07 - Desarrollo Guiado por Pruebas (TDD)](07-tdd.md)
 - Volver al [README principal](../README.md)

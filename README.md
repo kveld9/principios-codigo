@@ -39,7 +39,9 @@ Estructura física del repositorio tras la fase de andamiaje inicial:
 │   ├── 03-arquitectura.md            # Arquitectura hexagonal y dirección de dependencias
 │   ├── 04-solid.md                   # Principios SOLID y abstracción proporcional
 │   ├── 05-funciones.md               # Funciones pequeñas y complejidad ciclomática
-│   └── 06-nombres.md                 # Nombres, legibilidad y comentarios
+│   ├── 06-nombres.md                 # Nombres, legibilidad y comentarios
+│   ├── 07-tdd.md                     # Desarrollo guiado por pruebas, ciclo y katas
+│   └── 08-testing.md                 # Estrategia de testing, pirámide y determinismo
 │
 ├── Ejemplos Ejecutables (examples/)
 │   ├── god_module_split/             # Separación de monolito en módulos cohesivos
@@ -76,6 +78,8 @@ fases posteriores, preservando la trazabilidad de cada estándar.
 - [04 - Principios SOLID](docs/04-solid.md): Responsabilidad, extensibilidad y abstracción proporcional.
 - [05 - Funciones Pequeñas y Complejidad Ciclomática](docs/05-funciones.md): Umbrales, métricas y refactorización.
 - [06 - Nombres, Legibilidad y Comentarios](docs/06-nombres.md): Nomenclatura intencional, comentarios y formato.
+- [07 - Desarrollo Guiado por Pruebas (TDD)](docs/07-tdd.md): Ciclo Red-Green-Refactor, triangulación y katas.
+- [08 - Estrategia de Testing](docs/08-testing.md): Pirámide de pruebas, dobles, determinismo y mutación.
 
 ---
 
