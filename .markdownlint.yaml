@@ -1,0 +1,19 @@
+# Markdownlint configuration for repository standards.
+# Each deviation from default rules is individually justified.
+
+# Default rules enabled
+default: true
+
+# MD013 / line-length: Extended limit of 120 characters for readable technical prose.
+# Code blocks (code_blocks: false) and tables (tables: false) are excluded
+# to preserve code snippets, continuous commands, and comparative tables.
+MD013:
+  line_length: 120
+  code_blocks: false
+  tables: false
+
+# MD033 / no-inline-html: Allow only structurally indispensable HTML elements.
+# 'br' is permitted inside Markdown table cells to format multiline items cleanly.
+MD033:
+  allowed_elements:
+    - br

@@ -1,0 +1,23 @@
+# Auto-detect text files and normalize line endings to LF on commit
+* text=auto eol=lf
+
+# Force LF for shell scripts and configuration
+*.sh text eol=lf
+*.bash text eol=lf
+
+# Explicit text files
+*.md text
+*.txt text
+*.json text
+*.yaml text
+*.yml text
+*.toml text
+*.ini text
+*.cfg text
+
+# Source code files with diff driver hints
+*.py text diff=python
+
+# GitHub Linguist attributes
+docs/* linguist-documentation
+examples/* linguist-documentation=false

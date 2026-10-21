@@ -1,0 +1,55 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+# Principle of least privilege: explicitly restrict token permissions to read-only
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint-markdown:
+    name: Markdown Quality Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Lint Markdown Files
+        uses: DavidAnson/markdownlint-cli2-action@v24
+        with:
+          globs: |
+            **/*.md
+            !node_modules
+
+  no-emoji-execution-surfaces:
+    name: Verify No Emojis in Execution Surfaces
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Check execution surfaces for prohibited emojis
+        run: |
+          echo "Scanning execution surfaces for prohibited emojis..."
+          TARGETS=(
+            .github/workflows/
+            .editorconfig
+            .gitattributes
+            .gitignore
+            .markdownlint.yaml
+          )
+          if grep -rnP '[\x{1F000}-\x{1FAFF}\x{2600}-\x{27BF}]' "${TARGETS[@]}"; then
+            echo "::error::Prohibited emojis detected in execution surfaces." >&2
+            exit 1
+          fi
+          echo "All execution surfaces are clean of emojis."
