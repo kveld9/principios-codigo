@@ -10,7 +10,7 @@ pruebas automatizadas con `pytest` y documentación explicativa.
 ## Índice de Ejemplos
 
 | Directorio | Principio de Diseño | Documento |
-|---|---|---|
+| --- | --- | --- |
 | `god_module_split` | Separación de Módulo Dios y Responsabilidad Única | doc 02 |
 | `ports_adapters` | Puertos y Adaptadores (Arquitectura Hexagonal) | doc 03, 11 |
 | `guard_clauses` | Cláusulas de Guarda y Tablas de Despacho | doc 05 |
