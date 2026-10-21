@@ -238,4 +238,5 @@ def test_writes_entry_when_log_directory_is_empty(tmp_path: Path) -> None:
 ## Navegación
 
 - Anterior: [07 - Desarrollo Guiado por Pruebas (TDD)](07-tdd.md)
+- Siguiente: [09 - Manejo de Errores](09-errores.md)
 - Volver al [README principal](../README.md)

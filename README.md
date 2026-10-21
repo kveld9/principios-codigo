@@ -41,7 +41,9 @@ Estructura física del repositorio tras la fase de andamiaje inicial:
 │   ├── 05-funciones.md               # Funciones pequeñas y complejidad ciclomática
 │   ├── 06-nombres.md                 # Nombres, legibilidad y comentarios
 │   ├── 07-tdd.md                     # Desarrollo guiado por pruebas, ciclo y katas
-│   └── 08-testing.md                 # Estrategia de testing, pirámide y determinismo
+│   ├── 08-testing.md                 # Estrategia de testing, pirámide y determinismo
+│   ├── 09-errores.md                 # Filosofía fail-loud, análisis en frontera y excepciones
+│   └── 10-hardcoding.md              # Fuente única de verdad, derivación y portabilidad
 │
 ├── Ejemplos Ejecutables (examples/)
 │   ├── god_module_split/             # Separación de monolito en módulos cohesivos
@@ -80,6 +82,8 @@ fases posteriores, preservando la trazabilidad de cada estándar.
 - [06 - Nombres, Legibilidad y Comentarios](docs/06-nombres.md): Nomenclatura intencional, comentarios y formato.
 - [07 - Desarrollo Guiado por Pruebas (TDD)](docs/07-tdd.md): Ciclo Red-Green-Refactor, triangulación y katas.
 - [08 - Estrategia de Testing](docs/08-testing.md): Pirámide de pruebas, dobles, determinismo y mutación.
+- [09 - Manejo de Errores](docs/09-errores.md): Filosofía fail-loud, análisis en frontera y excepciones tipadas.
+- [10 - Anti-Hardcoding y Fuente Única de Verdad](docs/10-hardcoding.md): Única fuente de verdad, derivación y portabilidad.
 
 ---
 
