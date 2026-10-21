@@ -74,6 +74,8 @@ def process_order(price: Decimal, is_active: bool, is_vip: bool) -> Decimal:
     return apply_discount(price, is_vip)
 ```
 
+Ejemplo ejecutable: [examples/guard_clauses/](../examples/guard_clauses/)
+
 ### Tabla de Búsqueda (Lookup Table / Dict Dispatch)
 
 Sustituir cadenas de `if-elif-else` por diccionarios asegura que la función de despacho mantenga CC = 1

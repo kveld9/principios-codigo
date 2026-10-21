@@ -154,6 +154,8 @@ class InMemoryOrderRepository:
         self._storage[order.order_id] = order
 ```
 
+Ejemplo ejecutable: [examples/ports_adapters/](../examples/ports_adapters/)
+
 ---
 
 ## 4. Límites como Contratos de Datos: DTOs vs Entidades

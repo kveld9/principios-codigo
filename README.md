@@ -41,11 +41,21 @@ Estructura física del repositorio tras la fase de andamiaje inicial:
 │   ├── 05-funciones.md               # Funciones pequeñas y complejidad ciclomática
 │   └── 06-nombres.md                 # Nombres, legibilidad y comentarios
 │
+├── Ejemplos Ejecutables (examples/)
+│   ├── god_module_split/             # Separación de monolito en módulos cohesivos
+│   ├── ports_adapters/               # Arquitectura hexagonal con puertos Protocol
+│   ├── guard_clauses/                # Reducción de CC con cláusulas de guarda
+│   ├── tdd_kata/                     # Desarrollo guiado por pruebas paso a paso
+│   ├── parse_dont_validate/          # Modelado tipado inmutable en la frontera
+│   ├── single_source_of_truth/       # Única fuente de verdad y rutas desacopladas
+│   └── value_object/                 # Objeto de valor Money con precisión Decimal
+│
 ├── Configuración del Entorno
 │   ├── .editorconfig                 # Reglas de formato, indentación y codificación
 │   ├── .gitattributes                # Normalización forzada de finales de línea a LF
 │   ├── .gitignore                    # Reglas de exclusión para SO, entornos y Python
-│   └── .markdownlint.yaml            # Reglas de validación estática para Markdown
+│   ├── .markdownlint.yaml            # Reglas de validación estática para Markdown
+│   └── pyproject.toml                # Configuración de dependencias dev, ruff, pytest y radon
 │
 └── Automatización y GitHub (.github/)
     ├── dependabot.yml                # Actualizaciones periódicas de GitHub Actions
@@ -69,6 +79,19 @@ fases posteriores, preservando la trazabilidad de cada estándar.
 
 ---
 
+## Ejemplos Ejecutables
+
+El kit incluye ejemplos prácticos en Python con versiones antes/después y pruebas que demuestran la
+aplicación concreta de cada principio. La documentación detallada de cada caso se encuentra en
+[examples/README.md](examples/README.md).
+
+```bash
+python -m pip install --group dev
+ruff check . && ruff format --check . && pytest
+```
+
+---
+
 ## Verificación de Estándares
 
 La calidad de la documentación y la consistencia de formato se comprueban localmente con `markdownlint-cli2`:
@@ -76,3 +99,7 @@ La calidad de la documentación y la consistencia de formato se comprueban local
 ```bash
 npx -y markdownlint-cli2@0.18.1 "**/*.md"
 ```
+
+El flujo de integración continua (CI) ejecuta adicionalmente el trabajo `python-examples`, verificando el
+formato con Ruff, la suite de pruebas unitarias con Pytest y el umbral de complejidad ciclomática
+(CC <= 5 fuera de anti-patrones intencionales) con Radon.

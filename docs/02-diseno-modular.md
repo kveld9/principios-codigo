@@ -173,6 +173,8 @@ def register_user(
     return user
 ```
 
+Ejemplo ejecutable: [examples/god_module_split/](../examples/god_module_split/)
+
 ---
 
 ## 5. Organización del Proyecto: Por Feature vs Por Capa
