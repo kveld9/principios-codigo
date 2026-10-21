@@ -36,7 +36,10 @@ Estructura física del repositorio tras la fase de andamiaje inicial:
 ├── Documentación Técnica (docs/)
 │   ├── 01-principios.md              # Principios fundamentales y mapa conceptual
 │   ├── 02-diseno-modular.md          # Modularidad, contratos y eliminación de monolitos
-│   └── 03-arquitectura.md            # Arquitectura hexagonal y dirección de dependencias
+│   ├── 03-arquitectura.md            # Arquitectura hexagonal y dirección de dependencias
+│   ├── 04-solid.md                   # Principios SOLID y abstracción proporcional
+│   ├── 05-funciones.md               # Funciones pequeñas y complejidad ciclomática
+│   └── 06-nombres.md                 # Nombres, legibilidad y comentarios
 │
 ├── Configuración del Entorno
 │   ├── .editorconfig                 # Reglas de formato, indentación y codificación
@@ -60,6 +63,9 @@ fases posteriores, preservando la trazabilidad de cada estándar.
 - [01 - Principios Fundamentales de Código](docs/01-principios.md): Legibilidad, cambio mínimo y correctitud.
 - [02 - Diseño Modular y Eliminación de Monolitos](docs/02-diseno-modular.md): Cohesión, contratos y cero monolitos.
 - [03 - Arquitectura y Dirección de Dependencias](docs/03-arquitectura.md): Regla de dependencia y dominio sin I/O.
+- [04 - Principios SOLID](docs/04-solid.md): Responsabilidad, extensibilidad y abstracción proporcional.
+- [05 - Funciones Pequeñas y Complejidad Ciclomática](docs/05-funciones.md): Umbrales, métricas y refactorización.
+- [06 - Nombres, Legibilidad y Comentarios](docs/06-nombres.md): Nomenclatura intencional, comentarios y formato.
 
 ---
 

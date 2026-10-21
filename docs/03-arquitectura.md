@@ -236,4 +236,5 @@ Antes de aprobar o integrar un diseño arquitectónico, verificar los siguientes
 ## Navegación
 
 - Anterior: [02 - Diseño Modular y Eliminación de Monolitos](02-diseno-modular.md)
+- Siguiente: [04 - Principios SOLID](04-solid.md)
 - Volver al [README principal](../README.md)
