@@ -242,4 +242,5 @@ explícita su invarianza para distinguirlo de valores de configuración externa.
 ## Navegación
 
 - Anterior: [09 - Manejo de Errores](09-errores.md)
+- Siguiente: [11 - Inyección y Gestión de Dependencias](11-dependencias.md)
 - Volver al [README principal](../README.md)

@@ -31,6 +31,7 @@ Estructura física del repositorio tras la fase de andamiaje inicial:
 ├── Licencia y Gobernanza
 │   ├── LICENSE                       # Licencia MIT base
 │   ├── CONTRIBUTING.md               # Guía técnica de contribución y validación local
+│   ├── CHECKLIST.md                  # Lista de verificación consolidada por fases
 │   └── README.md                     # Descripción general y mapa de componentes
 │
 ├── Documentación Técnica (docs/)
@@ -43,7 +44,10 @@ Estructura física del repositorio tras la fase de andamiaje inicial:
 │   ├── 07-tdd.md                     # Desarrollo guiado por pruebas, ciclo y katas
 │   ├── 08-testing.md                 # Estrategia de testing, pirámide y determinismo
 │   ├── 09-errores.md                 # Filosofía fail-loud, análisis en frontera y excepciones
-│   └── 10-hardcoding.md              # Fuente única de verdad, derivación y portabilidad
+│   ├── 10-hardcoding.md              # Fuente única de verdad, derivación y portabilidad
+│   ├── 11-dependencias.md            # Inyección de dependencias, puertos y librerías externas
+│   ├── 12-refactorizacion.md         # Code smells, pruebas de caracterización y refactor seguro
+│   └── 13-revision.md                # Revisión de código, prioridades, etiqueta y tamaño de PR
 │
 ├── Ejemplos Ejecutables (examples/)
 │   ├── god_module_split/             # Separación de monolito en módulos cohesivos
@@ -84,6 +88,9 @@ fases posteriores, preservando la trazabilidad de cada estándar.
 - [08 - Estrategia de Testing](docs/08-testing.md): Pirámide de pruebas, dobles, determinismo y mutación.
 - [09 - Manejo de Errores](docs/09-errores.md): Filosofía fail-loud, análisis en frontera y excepciones tipadas.
 - [10 - Anti-Hardcoding y Fuente Única de Verdad](docs/10-hardcoding.md): Única fuente de verdad, derivación y portabilidad.
+- [11 - Inyección y Gestión de Dependencias](docs/11-dependencias.md): Inversión de control, puertos y lockfiles.
+- [12 - Code Smells y Refactorización Segura](docs/12-refactorizacion.md): Catálogo de smells y refactorización segura.
+- [13 - Revisión de Código](docs/13-revision.md): Jerarquía de revisión, etiqueta y tamaño de PR.
 
 ---
 
