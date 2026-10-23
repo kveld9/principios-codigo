@@ -30,6 +30,7 @@ Estructura física del repositorio tras la fase de andamiaje inicial:
 .
 ├── Licencia y Gobernanza
 │   ├── LICENSE                       # Licencia MIT base
+│   ├── SECURITY.md                   # Política de reporte de vulnerabilidades
 │   ├── CONTRIBUTING.md               # Guía técnica de contribución y validación local
 │   ├── CHECKLIST.md                  # Lista de verificación consolidada por fases
 │   └── README.md                     # Descripción general y mapa de componentes
@@ -99,6 +100,8 @@ fases posteriores, preservando la trazabilidad de cada estándar.
 El kit incluye ejemplos prácticos en Python con versiones antes/después y pruebas que demuestran la
 aplicación concreta de cada principio. La documentación detallada de cada caso se encuentra en
 [examples/README.md](examples/README.md).
+
+La instalación del grupo de desarrollo requiere `pip >= 25.1`:
 
 ```bash
 python -m pip install --group dev
