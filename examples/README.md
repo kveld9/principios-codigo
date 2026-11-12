@@ -18,6 +18,7 @@ pruebas automatizadas con `pytest` y documentación explicativa.
 | `parse_dont_validate` | Analizar en Lugar de Validar (*Parse, Don't Validate*) | doc 09 |
 | `single_source_of_truth` | Única Fuente de Verdad y Precedencia de Configuración | doc 10 |
 | `value_object` | Objetos de Valor e Inmutabilidad (*Value Objects*) | doc 12 |
+| `explicit_state_machine` | Máquinas de Estado Explícitas vs. Antipatrón Implícito | doc 14 |
 
 ---
 
