@@ -24,7 +24,7 @@ agrupa las reglas fundamentales de ingeniería por fases del ciclo de desarrollo
 
 ---
 
-## 2. Implementación (Docs 05, 06, 09, 10, 11)
+## 2. Implementación (Docs 05, 06, 09, 10, 11, 14)
 
 - [ ] **Complejidad Ciclomática**: Complejidad ciclomática CC <= 5 por función, con límite estricto de 10 (doc 05)
 - [ ] **Cláusulas de Guarda**: Precondiciones validadas al inicio de la función para evitar anidamientos (doc 05)
@@ -41,6 +41,7 @@ agrupa las reglas fundamentales de ingeniería por fases del ciclo de desarrollo
 - [ ] **Inyección de Dependencias**: Dependencias recibidas por constructor o parámetro sin singletons (doc 11)
 - [ ] **Aislamiento de Paquetes Externos**: Librerías externas volátiles encapsuladas tras puertos (doc 11)
 - [ ] **Archivos de Bloqueo**: Entornos reproducibles con versiones fijadas: lockfile o pins exactos (doc 11)
+- [ ] **Máquinas de Estado Explícitas**: Fases modeladas con tipos suma/Enum, función única y cero booleanos (doc 14)
 
 ---
 
@@ -71,6 +72,6 @@ agrupa las reglas fundamentales de ingeniería por fases del ciclo de desarrollo
 | Fase | Foco Técnico Principal | Criterio de Cumplimiento |
 | :--- | :--- | :--- |
 | **Diseño** | Modularidad, contratos y aislamiento de dominio | Grafos acíclicos y dominio puro sin I/O (docs 01-04) |
-| **Implementación** | Complejidad acotada, nombres, tipado y SSOT | CC <= 5, fail-loud, cero hardcoding e inyección (docs 05, 06, 09, 10, 11) |
+| **Implementación** | Complejidad acotada, nombres, tipado y SSOT | CC <= 5, fail-loud, cero hardcoding, máquinas de estado e inyección (docs 05, 06, 09, 10, 11, 14) |
 | **Tests** | TDD, pirámide de pruebas y determinismo | Ciclo Red-Green, Fakes en memoria y cero sleep (docs 07, 08) |
 | **Refactor y Revisión** | Pasos seguros, code smells y revisión de pares | Pruebas de caracterización, commits atómicos y PRs < 400 líneas (docs 12, 13) |

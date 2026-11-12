@@ -48,7 +48,8 @@ Estructura física del repositorio tras la fase de andamiaje inicial:
 │   ├── 10-hardcoding.md              # Fuente única de verdad, derivación y portabilidad
 │   ├── 11-dependencias.md            # Inyección de dependencias, puertos y librerías externas
 │   ├── 12-refactorizacion.md         # Code smells, pruebas de caracterización y refactor seguro
-│   └── 13-revision.md                # Revisión de código, prioridades, etiqueta y tamaño de PR
+│   ├── 13-revision.md                # Revisión de código, prioridades, etiqueta y tamaño de PR
+│   └── 14-maquinas-estado.md         # Ciclos de vida, anti-estados implícitos y tipos algebraicos
 │
 ├── Ejemplos Ejecutables (examples/)
 │   ├── god_module_split/             # Separación de monolito en módulos cohesivos
@@ -57,7 +58,8 @@ Estructura física del repositorio tras la fase de andamiaje inicial:
 │   ├── tdd_kata/                     # Desarrollo guiado por pruebas paso a paso
 │   ├── parse_dont_validate/          # Modelado tipado inmutable en la frontera
 │   ├── single_source_of_truth/       # Única fuente de verdad y rutas desacopladas
-│   └── value_object/                 # Objeto de valor Money con precisión Decimal
+│   ├── value_object/                 # Objeto de valor Money con precisión Decimal
+│   └── explicit_state_machine/       # Máquina de estados explícita frente a banderas booleanas
 │
 ├── Configuración del Entorno
 │   ├── .editorconfig                 # Reglas de formato, indentación y codificación
@@ -92,6 +94,7 @@ fases posteriores, preservando la trazabilidad de cada estándar.
 - [11 - Inyección y Gestión de Dependencias](docs/11-dependencias.md): Inversión de control, puertos y lockfiles.
 - [12 - Code Smells y Refactorización Segura](docs/12-refactorizacion.md): Catálogo de smells y refactorización segura.
 - [13 - Revisión de Código](docs/13-revision.md): Jerarquía de revisión, etiqueta y tamaño de PR.
+- [14 - Máquinas de Estado Explícitas](docs/14-maquinas-estado.md): Tipos suma, función única y anti-estados implícitos.
 
 ---
 
