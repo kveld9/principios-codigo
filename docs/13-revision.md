@@ -180,4 +180,5 @@ cálculo pura, determinista y directamente verificable mediante pruebas unitaria
 ## Navegación
 
 - Anterior: [12 - Code Smells y Refactorización Segura](12-refactorizacion.md)
+- Siguiente: [14 - Máquinas de Estado Explícitas](14-maquinas-estado.md)
 - Volver al [README principal](../README.md)
